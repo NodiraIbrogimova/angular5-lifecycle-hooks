@@ -14,11 +14,11 @@ export class ChildComponent implements OnChanges {
   constructor() { }
 
   ngOnChanges(changes: SimpleChanges) {
-    for (let propertyName in changes) { 
+    for (const propertyName in changes) { 
       console.log(changes);
-      let change = changes[propertyName];
-      let current = JSON.stringify(change.currentValue);
-      let previous = JSON.stringify(change.previousValue);
+      const change = changes[propertyName];
+      const current = JSON.stringify(change.currentValue);
+      const previous = JSON.stringify(change.previousValue);
       console.log(`${propertyName} : currentValue = ${current} previousValue = ${previous}`);
     }
   }
