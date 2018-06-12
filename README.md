@@ -32,7 +32,7 @@ A component has a `lifecycle` managed by Angular. Angular creates it, renders it
 
 `ngOnChanges()`	- Respond when Angular (re)sets data-bound input properties. The method receives a SimpleChanges object of current and previous property values. Called before `ngOnInit()` and whenever one or more data-bound input properties change.
 
-`ngOnInit()` - Initialize the directive/component after Angular first displays the data-bound properties and sets the directive/component's input properties.Called once, after the first ngOnChanges().
+`ngOnInit()` - Initialize the directive/component after Angular first displays the data-bound properties and sets the directive/component's input properties.Called once, after the first `ngOnChanges()`.
 
 This project explains how `ngOnChanges()` and `ngOnInit()` works with simple example using parent-child components interaction. When the User inserts some text in `parent component` the `child component` will print the text synchronously. 
 Object - changes of `SimpleChange`  class of `SimpleChanges` interface is passed in ngOnChanges() and iterated over [for..in](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in). 
