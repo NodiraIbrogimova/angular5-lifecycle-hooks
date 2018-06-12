@@ -1,14 +1,19 @@
 <div class="container">
+  <h4>Angular Lifecycle Hooks Example</h4>
+  <small id="emailHelp" class="form-text text-muted">Inspect and see the changes in angular ngOnchanges</small>
+  <br>
+  <br>
 
-    <form>
-      <div class="form-group row">
-        <label class="col-sm-2 col-form-label" for="userText">Your text:</label>
-        <div class="col-sm-10">
-          <input type="text" class="form-control" name="input" id="userText" aria-describedby="yourText" [(ngModel)]="inputText" placeholder="Text here..."
-          />
-        </div>
+  <form>
+    <div class="form-group row">
+      <label class="col-sm-2 col-form-label text-secondary" for="userText">Your text:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" name="input" id="userText" aria-describedby="yourText" [(ngModel)]="inputText" placeholder="Text here..."
+        />
       </div>
-    </form>
-  </div>
-  
+    </div>
+  </form>
+
   <child [text]="inputText"></child>
+
+</div>

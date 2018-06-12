@@ -9,4 +9,6 @@ export class AppComponent {
   title = 'Angualar Lifecycle hooks';
 
   public inputText: string = '';
+
+  
 }
